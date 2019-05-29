@@ -1,0 +1,58 @@
+@font-face {
+  font-family: 'f1-regular';
+  src: url(font/Formula1-Regular.otf);
+}
+@font-face {
+  font-family: 'f1-wide';
+  src: url(font/Formula1-Wide.otf);
+}
+.header{
+  background-image: url(img/header.png);
+  background-repeat: no-repeat;
+  background-position: top center;
+  -moz-background-size: cover;
+  background-size: cover;
+  z-index: 0;
+  position: relative;
+}
+
+.header_transparent{
+  background-color: rgba(255, 161, 3, 0.5);
+}
+
+.header::before{
+  content: '';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: inherit;
+  z-index: -1;
+  filter: blur(5px);
+}
+
+.header h1{
+  font-family: 'f1-regular';
+  margin: 0;
+  padding: 120px 0px 0px 0px;
+  text-align: center;
+  color: white;
+  font-size: 80px;
+}
+
+.header h2{
+  font-family: 'f1-regular';
+  margin: 0;
+  padding: 0px 0px;
+  text-align: center;
+  color: white;
+  font-size: 70px;
+}
+
+.header h3{
+  font-family: 'f1-regular';
+  margin: 0;
+  padding: 100px 0px;
+  text-align: center;
+  color: white;
+  font-size: 50px;
+}
