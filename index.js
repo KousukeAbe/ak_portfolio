@@ -4,7 +4,7 @@ window.onload = function(){
   action_label();
 }
 
-action_label(){
+function action_label(){
   if(flag){
     document.getElementById('uho').innerText = 'uhouho';
   }else{
